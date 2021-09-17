@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Mascotas</title>
+</head>
+
+<body>
+    <section>
+        <h1>REGISTRO DE MASCOTAS</h1>
+        <fieldset>
+            <legend>REGISTRO MASCOTAS</legend>
+            <form method="POST" autocomplete="off" action="">
+                <label for="nombre">Nombre:</label><br />
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese un nombre de mascota" size="40"
+                    tabindex="1" required />
+                <br /><br />
+                <label for="tipo">Tipo:</label><br />
+                <input type="text" id="tipo" name="tipo" placeholder="Ingrese el tipo de mascota" size="40" tabindex="2"
+                    required />
+                <br /><br />
+                <label for="responsable">Responsable:</label><br />
+                <input type="text" id="responsable" name="responsable" placeholder="Ingrese nombre del responsable"
+                    size="60" tabindex="3" required />
+                <br /><br />
+                <label for="servicio">Servicio:</label><br />
+                <select name="servicio" id="servicio" tabindex="4">
+                    <option value="baño">Baño</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="cirugia">Cirugia</option>
+                    <option value="otro">Otro</option>
+                    <option value="sin_servicio" selected="true">Sin servicio</option>
+                </select><br /><br />
+
+                <button type="submit">Guardar</button>
+                <button type="reset">Cancelar</button>
+                <input type="button" onclick="history.back()" name="volver atras" value="Volver al listado">
+            </form>
+        </fieldset>
+    </section>
+</body>
+
+</html>
