@@ -18,21 +18,24 @@
                 <input type="text" id="nombre" name="nombre" placeholder="Ingrese un nombre de mascota" size="40"
                     tabindex="1" required />
                 <br /><br />
+                <label for="edad">Edad:</label><br />
+                <input type="text" id="edad" name="edad" placeholder="Ingrese edad de la mascota" size="40"
+                    tabindex="2" required />
+                <br /><br />
                 <label for="tipo">Tipo:</label><br />
-                <input type="text" id="tipo" name="tipo" placeholder="Ingrese el tipo de mascota" size="40" tabindex="2"
+                <input type="text" id="tipo" name="tipo" placeholder="Ingrese el tipo de mascota" size="40" tabindex="3"
                     required />
                 <br /><br />
                 <label for="responsable">Responsable:</label><br />
                 <input type="text" id="responsable" name="responsable" placeholder="Ingrese nombre del responsable"
-                    size="60" tabindex="3" required />
+                    size="60" tabindex="4" required />
                 <br /><br />
                 <label for="servicio">Servicio:</label><br />
-                <select name="servicio" id="servicio" tabindex="4">
-                    <option value="baño">Baño</option>
+                <select name="servicio" id="servicio" tabindex="5">
+                    <option value="baño" selected="true">Baño</option>
                     <option value="consulta">Consulta</option>
                     <option value="cirugia">Cirugia</option>
                     <option value="otro">Otro</option>
-                    <option value="sin_servicio" selected="true">Sin servicio</option>
                 </select><br /><br />
 
                 <button type="submit">Guardar</button>
