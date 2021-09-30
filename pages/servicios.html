@@ -5,49 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Gestionar Servicios</title>
 </head>
 
-<body>
-    <section>
-        <h1>LISTADO DE SERVICIOS</h1>
+<body class="bg-success p-2 text-white bg-opacity-75">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="text-center text-white">LISTADO DE SERVICIOS</h2>
+                <a href="registrar_servicios.html" class="btn btn-outline-light">
+                    Registrar
+                </a>
+                <a href="menu.html" class="btn btn-outline-light">
+                    Volver al menú
+                </a>
+                <div class="col-sm-12">&nbsp;</div>
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover">
+                        <thead>
+                            <tr>
+                                <th>Codigo</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Opciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Baño</td>
+                                <td>$40.000</td>
+                                <td><a href="editar_servicios.html" class="btn btn-sm btn-outline-warning">Editar</a> |
+                                    <a href="#" class="btn btn-sm btn-outline-danger">Eliminar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Consulta</td>
+                                <td>$15.000</td>
+                                <td><a href="editar_servicios.html" class="btn btn-sm btn-outline-warning">Editar</a> |
+                                    <a href="#" class="btn btn-sm btn-outline-danger">Eliminar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Cirugia</td>
+                                <td>Según consulta</td>
+                                <td><a href="editar_servicios.html" class="btn btn-sm btn-outline-warning">Editar</a> |
+                                    <a href="#" class="btn btn-sm btn-outline-danger">Eliminar</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <a href="registrar_servicios.html"><button>Registrar</button></a>
-        <input type="button" onclick="history.back()" name="volver atras" value="Volver al menú"><br /><br />
-        <table border="1" cellspacing="0" width="60%">
-            <thead>
-                <tr>
-                    <th width="10%">Codigo</th>
-                    <th width="60%">Nombre</th>
-                    <th width="12%">Precio</th>
-                    <th width="18%">Opciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Baño</td>
-                    <td>$40.000</td>
-                    <td><a href="editar_servicios.html"><button>Editar</button></a> | <a
-                            href="#"><button>Eliminar</button></a></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Consulta</td>
-                    <td>$15.000</td>
-                    <td><a href="editar_servicios.html"><button>Editar</button></a> | <a
-                        href="#"><button>Eliminar</button></a></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Cirugia</td>
-                    <td>Según consulta</td>
-                    <td><a href="editar_servicios.html"><button>Editar</button></a> | <a
-                        href="#"><button>Eliminar</button></a></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
