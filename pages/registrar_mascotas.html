@@ -10,42 +10,89 @@
     <title>Registrar Mascotas</title>
 </head>
 
-<body>
-    <section>
-        <h1>REGISTRO DE MASCOTAS</h1>
-        <fieldset>
-            <legend>REGISTRO MASCOTAS</legend>
-            <form method="POST" autocomplete="off" action="">
-                <label for="nombre">Nombre:</label><br />
-                <input type="text" id="nombre" name="nombre" placeholder="Ingrese un nombre de mascota" size="40"
-                    tabindex="1" required />
-                <br /><br />
-                <label for="edad">Edad:</label><br />
-                <input type="text" id="edad" name="edad" placeholder="Ingrese edad de la mascota" size="40" tabindex="2"
-                    required />
-                <br /><br />
-                <label for="tipo">Tipo:</label><br />
-                <input type="text" id="tipo" name="tipo" placeholder="Ingrese el tipo de mascota" size="40" tabindex="3"
-                    required />
-                <br /><br />
-                <label for="responsable">Responsable:</label><br />
-                <input type="text" id="responsable" name="responsable" placeholder="Ingrese nombre del responsable"
-                    size="60" tabindex="4" required />
-                <br /><br />
-                <label for="servicio">Servicio:</label><br />
-                <select name="servicio" id="servicio" tabindex="5">
-                    <option value="baño" selected="true">Baño</option>
-                    <option value="consulta">Consulta</option>
-                    <option value="cirugia">Cirugia</option>
-                    <option value="otro">Otro</option>
-                </select><br /><br />
+<body class="bg-success p-2 text-white bg-opacity-75 text-white">
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-black" href="mascotas.html">
+                <img src="../assets/img/logo.svg" alt="" width="35" height="25" class="d-inline-block align-text-top">
+                MascoTic
+            </a>
+            <button class="navbar-toggler btn-success" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-light" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h4 class="offcanvas-title text-black" id="offcanvasNavbarLabel">MascoTic</h4>
+                    <button type="button" class="btn-close text-reset btn-success" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-black" aria-current="page" href="mascotas.html">Mascotas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-black" aria-current="page"
+                                href="servicios.html">Servicios</a>
+                        </li>
+                    </ul>
 
-                <button type="submit">Guardar</button>
-                <button type="reset">Cancelar</button>
-                <input type="button" onclick="history.back()" name="volver atras" value="Volver al listado">
-            </form>
-        </fieldset>
-    </section>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-5 p-5">
+        <div class="row">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-6">
+                <h2 class="text-center text-white">REGISTRO DE MASCOTAS</h2>
+                <form method="POST" autocomplete="off" action="">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label text-white">Nombre: </label>
+                        <input type="text" id="nombre" name="nombre" tabindex="1"
+                            placeholder="Ingrese el nombre de mascota" size="50" required class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="edad" class="form-label text-white">Edad: </label>
+                        <input type="text" id="edad" name="edad" tabindex="2"
+                            placeholder="Ingrese la edad de la mascota" size="50" required class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="tipo" class="form-label text-white">Tipo: </label>
+                        <input type="text" id="tipo" name="tipo" tabindex="3" placeholder="Ingrese tipo de mascota"
+                            size="50" required class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="responsable" class="form-label text-white">Responsable: </label>
+                        <input type="password" id="responsable" name="responsable" tabindex="4"
+                            placeholder="Ingrese responsable de la mascota" size="50" required class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="servicio" class="form-label text-white">Servicio: </label>
+                        <select name="servicio" id="servicio" tabindex="5">
+                            <option value="baño" selected="true">Baño</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="cirugia">Cirugia</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="d-grid gap-2 ">
+                        <button type="submit" tabindex="6" class="btn btn-dark btn-lg">Registrar</button>
+                        <button type="reset" tabindex="7" class="btn btn-danger btn-lg">Cancelar</button>
+                        <a tabindex="8" class="btn btn-info btn-lg" href="mascotas.html">Volver al listado</a>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="col-sm-3">&nbsp;</div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
